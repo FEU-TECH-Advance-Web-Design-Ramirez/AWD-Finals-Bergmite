@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(../img/hero-image.png);
+    background-size: cover;
+    height: 25rem;
+}
+
+nav {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,.1));
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2.5rem;
+}
+
+.logo img {
+    height: 2rem;
+    margin-right: .5rem;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 2.5rem;
+}
+
+nav a {
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    font-size: .9rem;
+    text-shadow: 2px 2px 4px black;
+}
+
+#login {
+    border-style: solid;
+    border-color: rgb(136, 0, 199);
+    border-width: 2px;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 4rem;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .75);
+}
+
+#hero-section {
+    margin-left: 5rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 3px 3px 6px rgba(0, 0, 0, .75);
+}
+
+h1 {
+    background-image: linear-gradient(to right, #05DEEB, #DF04E0);
+    color: white;
+    display: inline-flex;
+    font-size: 65px;
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 75px;
+}
+
+#hero-section ul {
+    background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.125));
+    display: block;
+}
