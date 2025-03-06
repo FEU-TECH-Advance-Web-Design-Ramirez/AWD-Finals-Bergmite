@@ -61,6 +61,22 @@ nav a {
 
 }
 
+header h1 {
+    background-image: linear-gradient(to right, #05DEEB, #DF04E0);
+    color: white;
+    display: inline-flex;
+    font-size: 65px;
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 75px;
+    text-align: center;
+
+    display: block;
+    width: fit-content;
+    margin: 75px auto 0 auto;
+}
+
 #login {
 
     border-style: solid;
@@ -86,4 +102,58 @@ nav a {
     padding-right: 2rem;
     border-radius: 4rem;
     box-shadow: 3px 3px 6px rgba(0, 0, 0, .75);
+}
+
+.hero {
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)), blue;
+    height: 20rem;
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center;
+    text-align: left; /* Align text to the left */
+    padding: 2rem;
+}
+
+.logoe {
+    width: 12rem; /* Adjust image size */
+    height: auto;
+    margin-right: 1rem; /* Add spacing between the image and text */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    color: white;
+    margin: 0;
+}
+
+
+
+
+.developers h2{
+
+    background-color: rgb(112, 9, 191);
+    color: white;
+    display: inline-flex;
+    font-size: 45px;
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 75px;
+    text-align: center;
+
+    display: block;
+    width: fit-content;
+    margin: 75px auto 0 auto;
+
 }
