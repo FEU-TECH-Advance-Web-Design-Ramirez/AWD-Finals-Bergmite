@@ -65,7 +65,7 @@ nav a {
     text-shadow: 3px 3px 6px rgba(0, 0, 0, .75);
 }
 
-h1 {
+#hero-section h1 {
     background-image: linear-gradient(to right, #05DEEB, #DF04E0);
     color: white;
     display: inline-flex;
@@ -79,4 +79,62 @@ h1 {
 #hero-section ul {
     background-image: linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.125));
     display: block;
+    color: white;
+    margin-top: 2rem;
+    margin-left: 5rem;
+}
+
+.app-buttons {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.app-buttons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 10px;
+    padding: 0.5rem 1rem;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease-in-out;
+    margin-top: 1rem;
+}
+
+#google-play {
+    margin-left: 50rem;
+}
+
+.app-buttons img {
+    height: 3rem;
+}
+
+.hero {
+    background: linear-gradient(to right, #120048, #30004d); /* Gradient background */
+    height: 15rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 5rem;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 2.3rem;
+    font-style: italic;
+    color: white;
+    max-width: 50%;
+}
+
+.hero #logo img {
+    height: 11rem;
+    width: 11rem;
+    margin-left: 3rem;
+}
+
+
+.logo img {
+    height: 2rem;
+    margin-right: .5rem;
 }
