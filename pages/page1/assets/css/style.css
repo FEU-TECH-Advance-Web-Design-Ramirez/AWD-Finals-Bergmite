@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-image: url(../../../../assets/img/hero-image.png);
+    background-size: cover;
+    height: 25rem;
+
+}
+
+nav {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.25), rgba(0,0,0,.1)) ;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-left: 2.5rem;
+}
+
+#logo {
+    margin-right: .5rem;
+    height: 40px;
+    width: 40px;
+}
+
+
+.logo a {
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+nav ul {
+    display: flex;
+
+}
+
+nav ul li {
+
+    list-style-type: none;
+    margin-right: 2.5rem;
+
+}
+
+nav a {
+
+    color: white;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1rem;
+    text-shadow: 2px 2px 4px black;
+    text-decoration: none;
+
+}
+
+header h1 {
+    background-image: linear-gradient(to right, #05DEEB, #DF04E0);
+    color: white;
+    display: inline-flex;
+    font-size: 65px;
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 75px;
+    text-align: center;
+
+    display: block;
+    width: fit-content;
+    margin: 75px auto 0 auto;
+}
+
+#login {
+
+    border-style: solid;
+    border-color: rgb(136, 0, 199);
+    border-width: 2px;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 4rem;
+    box-shadow: 3px 3px 6px rgba(0,0,0, .75);
+
+}
+
+#sign-up {
+    background-image: linear-gradient(to right, #05DEEB, #DF04E0);
+    color: black;
+    font-weight: bold;
+    text-shadow: none;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 4rem;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, .75);
+}
+
+.hero {
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.7)), blue;
+    height: 20rem;
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    align-items: center;
+    text-align: left; /* Align text to the left */
+    padding: 2rem;
+}
+
+.logoe {
+    width: 12rem; /* Adjust image size */
+    height: auto;
+    margin-right: 1rem; /* Add spacing between the image and text */
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.hero h1 {
+    color: white;
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    color: white;
+    margin: 0;
+}
+
+
+
+
+.developers h2{
+
+    background-color: rgb(112, 9, 191);
+    color: white;
+    display: inline-flex;
+    font-size: 45px;
+    border-radius: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-top: 75px;
+    text-align: center;
+
+    display: block;
+    width: fit-content;
+    margin: 75px auto 0 auto;
+
+}
