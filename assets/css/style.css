@@ -26,3 +26,7 @@ nav {
     }
 }
 
+.sign-up-button {
+    background-image: linear-gradient(to right, rgt(193,43,206), rgb(33,143,217));
+    font-weight: bolder;
+}
