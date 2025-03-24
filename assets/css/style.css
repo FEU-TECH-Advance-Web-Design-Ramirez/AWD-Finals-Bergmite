@@ -47,3 +47,13 @@ header {
     border-color: rgba(255,192,242,0.75);
     box-shadow: 0px 0px 3px 3px rgba(255,37,186,0.594);
 }
+
+.card-text {
+    padding: 1 rem;
+}
+
+.feature-section {
+    background-image: url();
+    background-size: cover;
+    background-repeat: no-repeat;
+}
