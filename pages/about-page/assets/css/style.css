@@ -30,3 +30,8 @@ nav {
     background-image: linear-gradient(to right, rgb(193, 43, 206), rgb(33,143,217));
     font-weight: bolder;
 }
+
+.get-started-button {
+    background-image: linear-gradient(to right, rgb(193, 43, 206), rgb(33,143,217));
+    color: white;
+}
