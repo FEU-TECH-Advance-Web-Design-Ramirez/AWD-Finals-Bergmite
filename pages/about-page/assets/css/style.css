@@ -35,3 +35,7 @@ nav {
     background-image: linear-gradient(to right, rgb(193, 43, 206), rgb(33,143,217));
     color: white;
 }
+
+header {
+    background-image: linear-gradient(to right, rgb(0,0,0,.5), rgb(0,0,0,0));
+}
