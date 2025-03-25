@@ -1,0 +1,12 @@
+* {
+    font-family: "Funnel Sans";
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+body {
+    background: url(grainy-abstract-2background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
