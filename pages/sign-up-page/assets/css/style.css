@@ -4,7 +4,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f4f4f4;
+    background: linear-gradient(to right, rgb(193, 43, 206), rgb(33, 143, 217));
     margin: 0;
     }
     
@@ -37,7 +37,7 @@ body {
     button {
     width: 100%;
     padding: 10px;
-    background: blue;
+    background: linear-gradient(to right, rgb(193, 43, 206), rgb(33, 143, 217));
     color: white;
     border: none;
     border-radius: 5px;
@@ -61,8 +61,8 @@ body {
         align-items: center;
         gap: 10px;
     }
-
+    
     .logo {
-        width: 30px;
+        width: 30px; /* Adjust size as needed */
         height: auto;
     }
