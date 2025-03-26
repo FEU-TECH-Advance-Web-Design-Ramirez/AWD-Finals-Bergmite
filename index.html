@@ -3,9 +3,177 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>OnTrack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&;family=Montserrat:ital,wght@0,100..900;1,100..900&;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
-    
+    <!--Header-->
+    <header>
+        <!--Navbar-->
+     <nav class="navbar navbar-expand-lg bg-transparent fixed-top" data-bs-theme="dark">
+        <div class="container-fluid ms-4 me-4">
+
+            <!--Logo-->
+            <a class="navbar-brand" href="./index.html"> <img class="me-2" src="./assets/img/ontrack-logo.png" alt="" width="30">OnTrack</a>
+
+            <!--Toggle Button-->
+            <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!--Side Bar-->
+            <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" aria-modal="true" role="dialog">
+
+            <!--Sidebar Header-->   
+            <div class="offcanvas-header border-bottom">
+                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">OnTrack</h5>
+                <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+
+            <!--Sidebar Body-->
+            <div class="offcanvas-body">
+                <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                    <li class="nav-item">
+                        <a class="nav-link active px-5" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" href="./pages/page1/index.html">About</a>
+                    </li>
+                </ul>
+
+                <!--Login & Sign-up -->
+                <div class="d-flex justify-content-center align-items-center gap-3">
+                    <a class="nav-link login-button text-white text-decoration-none px-4 py-1 rounded-5" href="./pages/page2/index.html">Login</a>
+                    <a class="nav-link sign-up-button text-white text-decoration-none px-3 py-1 rounded-4" href="./pages/page3/index.html">Sign Up</a>
+                </div>
+            </div>
+        </div>
+     </nav>
+     <!--Hero Section-->
+     <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5">
+            <!--Hero Image-->
+            <div class="col-10 col-sm-8 col-lg-5 ps-10 mx-auto">
+                <img src="./assets/img/hero-image.png" class="d-block mx-lg-auto img-fluid hero-image" alt="" loading="lazy">
+            </div>
+            <!--Hero Text-->
+            <div class="col-lg-7 mx-auto">
+                <h1 class="display-5 fw-bold 1h-1 mb-3">Listen and Vibe on Repeat.</h1>
+                <p class="lead">Play all of your top and favorite songs anytime and anywhere, discover hot and amazing tracks that you'll love from recommended personalized playlists, view top or rising artists and their discography, get updated on exciting concerts and performances.</p>
+                
+                <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+                    <button type="button" class="btn btn-lg px-4 me-md-2 get-started-button">Click Here to Get Started!</button>
+                </div>
+            </div>
+        </div>
+     </div>
+    </header>
+    <!-- <section class="quote">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="col-lg-8">
+                    <img src="./assets/img/ontrack-logo.png" alt="" class="imgae-quote">-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="feature-section">
+        <div class="container">
+            <h2 class="display-5 fw-bold mb-3 justify-content-center d-flex pt-4">Main Features</h2>
+        </div>
+        <div class="container">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 px-4 py-5">
+                <div class="col">
+                    <div class="card feature text-center text-white mb-3">
+                        <img src="./assets/img/music-player-image.jpg" alt="" class="card-img-top">
+                        <h3 class="card-title pt-3">Music Player</h3>
+                        <p class="card-text">Play your favorite songs and anytime and anywhere</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card feature text-center text-white mb-3">
+                        <img src="./assets/img/playlist-image.jpg" alt="" class="card-img-top">
+                        <h3 class="card-title pt-3">Playlist</h3>
+                        <p class="card-text">Get personalized playlists on a daily or weekly basis based on your listening activity.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card feature text-center text-white mb-3">
+                        <img src="./assets/img/artists-image.jpg" alt="" class="card-img-top">
+                        <h3 class="card-title pt=3">Artists</h3>
+                        <p class="card-text">View prominent or new rising artist profiles and their music tracks.</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card feature text-center text-white mb-3">
+                        <img src="./assets/img/concerts-image.jpg" alt="" class="card-img-top">
+                        <h3 class="card-title pt-3">Concert</h3>
+                        <p class="card-text">Book concerts and view all upcoming schedules of events and performances.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer bg-black text-white py-5 justify-content-center">
+        <div class="container">
+            <div class="row">
+
+                <!---Brand Logo and Description-->
+                <div class="col-md-4 text-center">
+                    <div class="d-flex align-items-center">
+                        <img class="me-2 text-center" src="./assets/img/ontrack-logo.png" alt="OnTrack Logo" width="30">
+                        <h4 class="fw-bold text-uppercase mb-0">OnTrack</h4>
+                    </div>
+                    <!-- <p class="tagline fw-bold text-white">Your Sound, Your Stage, Your Story.</p> -->
+                    <p>It captures the essence of your platform—music streaming, playlists, artists, and live concerts—while playing on the word "OnTrack" to signify being in tune with music. Let me know if you want more suggestions!</p>
+
+                    <!--Social Media Icons-->
+                    <div class="social-icons">
+                        <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                        <a href="" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                        <a href="" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                    </div>
+                </div>
+
+                <!--Navigation Links-->
+                <div class="col-md-4 text-center">
+                    <h6 class="text-uppercase">navigation</h6>
+                    <ul class="list-unstyled justify-content-center">
+                        <li><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+                        <li><a href="./pages/page1/index.html" class="text-white text-decoration-none"></a>About Us</li>
+                        <li><a href="./pages/page2/index.html" class="text-white text-decoration-none"></a>Login</li>
+                        <li><a href="./pages/page3/index.html" class="text=white text-decoration-none"></a>Sign-up</li>
+                    </ul>
+                </div>
+
+                <!--Information-->
+                <div class="col-md-4 text-center">
+                    <h6 class="text-uppercase fw-bold">Information</h6>
+                    <p><i class="fa-solid fa-clock"></i> 8 AM - 5 PM, Mon - Sat</p>
+                    <p><i class="fa-solid fa-envelope"></i> ontrack@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Paredes Street, Sampaloc, Manila, Philippines</p>
+                    <p><i class="fa-solid fa-phone"></i> 09123456789</p>
+                    <a href="#" class="btn get-started-button px-4">
+                        📞 Call Us
+                    </a>
+                </div>
+                
+
+                <hr class="border-secondary my-4">
+
+                <div class="text-center">
+                    <p class="mb-0">©2025 OnTrack. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer> 
 </body>
 </html>
