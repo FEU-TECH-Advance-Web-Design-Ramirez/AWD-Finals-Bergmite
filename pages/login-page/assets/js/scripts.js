@@ -10,4 +10,5 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
     } else {
         document.getElementById('errorMessage').style.display = 'block';
     }
+    
 });
