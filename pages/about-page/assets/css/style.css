@@ -5,7 +5,7 @@
 }
 
 body {
-    background: url(grainy-abstract-2background.jpg);
+    background: url(../img/grainy-abstract-background.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -46,14 +46,15 @@ header {
     border: 3px solid;
     border-color: rgba(255,192,242,0.75);
     box-shadow: 0px 0px 3px 3px rgba(255,37,186, 0.594);
+    height: 35rem;
 }
 
 .card-text {
     padding: 1rem;
 }
 
-.feature-selection {
-    background-image: url(pink-and-purple-gradient-background.jpg);
+.features-section {
+    background-image: url(../../../../assets/img/body-background-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
