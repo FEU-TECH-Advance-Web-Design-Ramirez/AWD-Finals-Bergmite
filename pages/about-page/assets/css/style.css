@@ -1,0 +1,60 @@
+* {
+    font-family: "Funnel Sans";
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+body {
+    background: url(../img/grainy-abstract-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+nav {
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.25));
+}
+
+.navbar-brand {
+    font-weight: bolder;
+}
+
+@media(max-width: 991px) {
+    .sidebar {
+        background-color: rgba(0,0,0,.25);
+        backdrop-filter: blur(10px);
+    }
+}
+
+.sign-up-button {
+    background-image: linear-gradient(to right, rgb(193, 43, 206), rgb(33,143,217));
+    font-weight: bolder;
+}
+
+.get-started-button {
+    background-image: linear-gradient(to right, rgb(193, 43, 206), rgb(33,143,217));
+    color: white;
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(0,0,0,.5), rgb(0,0,0,0));
+}
+
+.feature {
+    min-height: 20rem;
+    background-color: rgba(0,0,0,.25);
+    border: 3px solid;
+    border-color: rgba(255,192,242,0.75);
+    box-shadow: 0px 0px 3px 3px rgba(255,37,186, 0.594);
+    height: 35rem;
+}
+
+.card-text {
+    padding: 1rem;
+}
+
+.features-section {
+    background-image: url(../../../../assets/img/body-background-image.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
