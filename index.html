@@ -16,7 +16,7 @@
     <!--Header-->
     <header>
         <!--Navbar-->
-     <nav class="navbar navbar-expand-lg bg-transparent fixed top" data-bs-theme="dark">
+     <nav class="navbar navbar-expand-lg bg-transparent fixed-top" data-bs-theme="dark">
         <div class="container-fluid ms-4 me-4">
 
             <!--Logo-->
@@ -28,7 +28,7 @@
             </button>
             
             <!--Side Bar-->
-            <div class="sidebar offcanvas offcanvas-end show" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" aria-modal="true" role="dialog">
+            <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" aria-modal="true" role="dialog">
 
             <!--Sidebar Header-->   
             <div class="offcanvas-header border-bottom">
@@ -87,6 +87,9 @@
     </section>
     <section class="feature-section">
         <div class="container">
+            <h2 class="display-5 fw-bold mb-3 justify-content-center d-flex pt-4">Main Features</h2>
+        </div>
+        <div class="container">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 px-4 py-5">
                 <div class="col">
                     <div class="card feature text-center text-white mb-3">
@@ -105,7 +108,7 @@
                 <div class="col">
                     <div class="card feature text-center text-white mb-3">
                         <img src="./assets/img/artists-image.jpg" alt="" class="card-img-top">
-                        <h3 class="card-title pt=3">Artists</h3>
+                        <h3 class="card-title pt=4">Artists</h3>
                         <p class="card-text">View prominent or new rising artist profiles and their music tracks.</p>
                     </div>
                 </div>
@@ -119,16 +122,18 @@
             </div>
         </div>
     </section>
-    <footer class="footer bg-black text-white py-5">
+    <footer class="footer bg-black text-white py-5 justify-content-center">
         <div class="container">
             <div class="row">
 
                 <!---Brand Logo and Description-->
-                <div class="col-md-4">
-                    <div class="container footer-logo"><a class="flex-align-items-center text-white text-decoration-none" href="./index.html"></a>
-                        <img class="me-2" src="./assets/img/ontrack-logo.png" alt="OnTrack Logo" width="30"></div>
-                    <h4 class="fw-bold text-uppercase">OnTrack</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, autem harum? Dolorem aut dolor accusamus odit eaque tempore voluptatem beatae reiciendis. Voluptates sequi doloribus mollitia ab nobis blanditiis velit vero?</p>
+                <div class="col-md-4 text-center">
+                    <div class="d-flex align-items-center">
+                        <img class="me-2 text-center" src="./assets/img/ontrack-logo.png" alt="OnTrack Logo" width="30">
+                        <h4 class="fw-bold text-uppercase mb-0">OnTrack</h4>
+                    </div>
+                    <p class="tagline fw-bold text-white">Your Sound, Your Stage, Your Story.</p>
+                    <p>It captures the essence of your platform—music streaming, playlists, artists, and live concerts—while playing on the word "OnTrack" to signify being in tune with music. Let me know if you want more suggestions!</p>
 
                     <!--Social Media Icons-->
                     <div class="social-icons">
@@ -139,23 +144,28 @@
                 </div>
 
                 <!--Navigation Links-->
-                <div class="col-md-2">
-                    <h6 class="text-uppercase fw-bold">navigation</h6>
-                    <ul class="list-unstyled">
+                <div class="col-md-4 text-center">
+                    <h6 class="text-uppercase">navigation</h6>
+                    <ul class="list-unstyled justify-content-center">
                         <li><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
                         <li><a href="./pages/page1/index.html" class="text-white text-decoration-none"></a>About Us</li>
                         <li><a href="./pages/page2/index.html" class="text-white text-decoration-none"></a>Login</li>
                         <li><a href="./pages/page3/index.html" class="text=white text-decoration-none"></a>Sign-up</li>
                     </ul>
                 </div>
-                
-                <!--Work Hours-->
-                <div class="col-md-4">
-                    <h6 class="text-uppercase fw-bold">Work Hours</h6>
-                    <p>8 AM - 5 Pm, Mon - Sat</p>
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias inventore quam consectetur nemo aliquid numquam quidem doloribus. Ut eum, culpa illum atque laudantium sed porro saepe quas nihil voluptate quasi!</p>
-                    <a href="#" class="btn get-started-button px-4"> 📞Call Us</a>
+
+                <!--Information-->
+                <div class="col-md-4 text-center">
+                    <h6 class="text-uppercase fw-bold">Information</h6>
+                    <p><i class="fa-solid fa-clock"></i> 8 AM - 5 PM, Mon - Sat</p>
+                    <p><i class="fa-solid fa-envelope"></i> ontrack@gmail.com</p>
+                    <p><i class="fa-solid fa-location-dot"></i> Paredes Street, Sampaloc, Manila, Philippines</p>
+                    <p><i class="fa-solid fa-phone"></i> 09123456789</p>
+                    <a href="#" class="btn get-started-button px-4">
+                        📞 Call Us
+                    </a>
                 </div>
+                
 
                 <hr class="border-secondary my-4">
 
