@@ -1,4 +1,4 @@
-body { font-family: Arial, sans-serif; padding: 20px; }
+body { font-family: Arial, sans-serif; padding: 20px;  background: linear-gradient(to right, rgb(193, 43, 206), rgb(33, 143, 217));}
 .container { max-width: 600px; margin: auto; }
 .search-bar, .filter { margin-bottom: 10px; width: 100%; padding: 8px; }
 .concert { border: 1px solid #ddd; padding: 10px; margin: 5px 0; }
@@ -9,3 +9,4 @@ body { font-family: Arial, sans-serif; padding: 20px; }
 .search-bar, .filter {
     flex: 1;
 }
+
