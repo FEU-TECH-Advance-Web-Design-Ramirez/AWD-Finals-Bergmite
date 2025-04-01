@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Confirmation</title>
+    <link rel="stylesheet" href="../searching-page/assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Admin Confirmation</h1>
+        <div id="pendingList">
+            <div class="concert-item">
+                <p><strong>Rock Festival 2025</strong></p>
+                <p>Review: Great lineup, awaiting approval.</p>
+                <div class="buttons">
+                    <button class="approve" onclick="approveConcert(this)">Approve</button>
+                    <button class="reject" onclick="rejectConcert(this)">Reject</button>
+                </div>
+            </div>
+            <div class="concert-item">
+                <p><strong>Pop Extravaganza</strong></p>
+                <p>Review: Popular event, needs final confirmation.</p>
+                <div class="buttons">
+                    <button class="approve" onclick="approveConcert(this)">Approve</button>
+                    <button class="reject" onclick="rejectConcert(this)">Reject</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../searching-page/assets/js/scripts.js"></script>
+
+</body>
