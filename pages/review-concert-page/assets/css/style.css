@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-image: url(../../../../assets/img/body-background-image.jpg);
     margin: 0;
     padding: 0;
     display: flex;
@@ -44,17 +44,13 @@ input, select, textarea {
 
 button {
     margin-top: 15px;
-    background-color: #007bff;
+    background-image: linear-gradient(to right, rgb(193, 43, 206), rgb(33, 143, 217));
     color: white;
     border: none;
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
     width: 105%;
-}
-
-button:hover {
-    background-color: #0056b3;
 }
 
 #message {
