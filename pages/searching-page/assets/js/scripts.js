@@ -8,4 +8,5 @@ function filterConcerts() {
         let genreMatch = genreFilter === 'all' || concert.getAttribute('data-genre') === genreFilter;
         concert.style.display = textMatch && genreMatch ? '' : 'none';
     });
+    
 }
