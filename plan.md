@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/zyx-0314/">
-    <img src="./" alt="Nyebe" width="130" height="100">
+    <img src="./assets/img/ontrack-logo.png" alt="" width="130" height="100">
   </a>
 
   <h3 align="center">On Track: Music Lover Website Project Plan</h3>
@@ -20,42 +20,14 @@
 
 ---
 
-<br />
-<br />
-
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#overview">1. Persona</a>
-      <ol>
-        <li>
-          <a href="#key-components">2. App Idea</a>
-        </li>
-        <li>
-          <a href="#technology">3. Project Specification</a>
-        </li>
-      </ol>
-    </li>
-    <li>
-      <a href="#rule,-practices-and-principles">Rules, Practices and Principles</a>
-    </li>
-    <li>
-      <a href="#resources">ERD</a>
-    </li>
-  </ol>
-</details>
-
----
-
-## Overview
+## 1. Persona
 
 Background:
 - 25-year-old
 - Passionate about music
 - Enjoys discovering new artists, attending concerts, and creating playlists.
 
-### Key Components
+### 2. App Idea
 App Idea:
 - A music discovery and social app that curates personalized playlists, concert alerts, and community-driven reviews.
 
@@ -77,7 +49,7 @@ Offerings
 - Concert calendars, artist spotlights,
 - Social sharing features.
 
-### Technology
+### 3. Project Specification
 UX Flow
 Home Screen:
 - Hero Section: Showcasing the main purpose of the website
@@ -117,7 +89,7 @@ Design Suggestions
 - Electric Blue
 - Black
 
-## Rules, Practices and Principles
+## 4.ERD
 Key Entities:
 
 User
