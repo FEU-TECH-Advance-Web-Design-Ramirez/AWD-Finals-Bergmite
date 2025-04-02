@@ -1,0 +1,42 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    padding: 20px;
+    background-image: linear-gradient(to right, rgb(193, 43, 206), rgb(33, 143, 217));
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.buttons {
+    margin-top: 10px;
+}
+
+button {
+    margin-right: 10px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.approve {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.reject {
+    background-color: #f44336;
+    color: white;
+}
