@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Listings</title>
+    <link rel="stylesheet" href="../searching-page/assets/css/style.css">
+   
+</head>
+<body>
+    <div class="container">
+        <h1>Concert List</h1>
+        <div class="search-container">
+            <input type="text" id="search" class="search-bar" placeholder="Search concerts..." onkeyup="filterConcerts()">
+            <select id="genreFilter" class="filter" onchange="filterConcerts()">
+                <option value="all">All Genres</option>
+                <option value="rock">Rock</option>
+                <option value="pop">Pop</option>
+                <option value="jazz">Jazz</option>
+            </select>
+        </div>
+        
+        <div id="concertList">
+            <div class="concert" data-genre="rock">Rock Festival 2025</div>
+            <div class="concert" data-genre="pop">Pop Extravaganza</div>
+            <div class="concert" data-genre="jazz">Jazz Nights</div>
+            <div class="concert" data-genre="rock">Classic Rock Reunion</div>
+        </div>
+    </div>
+
+    <script src="../searching-page/assets/js/scripts.js"></script>
+</body>
+</html>
+</html>
