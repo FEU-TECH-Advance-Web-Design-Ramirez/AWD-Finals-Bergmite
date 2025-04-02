@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Concert Submission</title>
+    <link rel="stylesheet" href="../submit-concert-page/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Submit a Concert</h2>
+        <form id="concertForm">
+            <label for="concertName">Concert Name:</label>
+            <input type="text" id="concertName" name="concertName" required>
+
+            <label for="artist">Artist/Band:</label>
+            <input type="text" id="artist" name="artist" required>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+
+            <label for="description">Description:</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message"></p> 
+    </div>
+    
+    <script src="../assets/js/scripts.js"></script>
+</body>
+</html>
