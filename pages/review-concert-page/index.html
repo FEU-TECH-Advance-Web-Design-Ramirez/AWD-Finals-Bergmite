@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review & Rating</title>
+    <link rel="stylesheet" href="../review-concert-page/assets/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Submit Your Review</h2>
+        <form id="reviewForm">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="rating">Rating (1-5):</label>
+            <select id="rating" name="rating" required>
+                <option value="">Select Rating</option>
+                <option value="1">1 - Poor</option>
+                <option value="2">2 - Fair</option>
+                <option value="3">3 - Good</option>
+                <option value="4">4 - Very Good</option>
+                <option value="5">5 - Excellent</option>
+            </select>
+
+            <label for="review">Your Review:</label>
+            <textarea id="review" name="review" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+        <p id="message"></p> 
+
+        <h3>Submitted Reviews</h3>
+        <div id="reviewsList"></div>
+    </div>
+
+    <script src="../review-concert-page/assets/js/scripts.js"></script>
+</body>
+</html>
