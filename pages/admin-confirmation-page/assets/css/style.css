@@ -2,11 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     padding: 20px;
+    background-image: linear-gradient(to right, rgb(193, 43, 206), rgb(33, 143, 217));
 }
 
 .container {
     max-width: 600px;
     margin: auto;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .item {
