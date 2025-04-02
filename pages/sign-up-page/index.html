@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up</title>
-    <link rel="stylesheet" href="../sign-up-page/assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.8.3/axios.min.js"></script>
 </head>
 <body>
     <div class="container">
@@ -12,18 +13,18 @@
             <img src="../../assets/img/ontrack-logo.png" alt="Logo" class="logo">
             <h2>Sign Up</h2>
         </div>
-        <form id="signupForm">
-            <div class="name-container">
-                <input type="text" id="firstname" placeholder="Firstname" required>
-                <input type="text" id="lastname" placeholder="Lastname" required>
-            </div>
+        <form id="userForm">
             <input type="text" id="name" placeholder="Username" required>
             <input type="email" id="email" placeholder="Email" required>
             <input type="password" id="password" placeholder="Password" required>
             <span id="error" class="error"></span>
             <button type="submit">Sign Up</button>
-        </form>  
+        </form>
+
+        <h2>Users List</h2>
+        <button onclick="fetchUsers()">Fetch All Users</button>
+          <div id="output"></div>
     </div>
-    <script src="../sign-up-page/assets/js/scripts.js"></script>
+    <script src="./assets/js/scripts.js"></script>
 </body>
 </html>
