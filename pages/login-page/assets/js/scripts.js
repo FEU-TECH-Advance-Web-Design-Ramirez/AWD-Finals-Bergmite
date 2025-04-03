@@ -1,14 +1,18 @@
-document.getElementById('loginForm').addEventListener('submit', function(event) {
+document.getElementById("loginForm").addEventListener("submit", function (event) {
     event.preventDefault();
-    
-    const username = document.getElementById('username').value;
-    const password = document.getElementById('password').value;
-    
-    if (username === 'user' && password === 'password123') {
-        alert('Login successful!');
-        window.location.href = 'dashboard.html';
-    } else {
-        document.getElementById('errorMessage').style.display = 'block';
-    }
-    
-});
+
+    document.getElementById("loginError").style.display = "none";
+
+    const API_URL = "https://demo-api-skills.vercel.app/api/MusicLover/users/login/";
+
+    const email = document.getElementById("email").value;
+
+    axios.get(API_URL+email)
+        .then((res) => {
+            alert("Login Successful");
+            document.getElementById("loginForm").reset();
+        })
+        .catch((err) => {
+            document.getElementById("loginError").style.display = "block";
+        })
+})
