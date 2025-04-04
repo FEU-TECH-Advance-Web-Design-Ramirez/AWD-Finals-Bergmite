@@ -1,0 +1,87 @@
+{
+
+  font-family: "Funnel Sans";
+  color: white;
+}
+
+.concert-table th {
+  text-align: center;
+}
+.concert-form, .review-form {
+  
+  width: 100%;
+  max-width: 400px;
+  padding: 30px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+body{
+  background-image: url(../../../../assets/img/body-background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+nav {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.5), rgba(0,0,0,.25));
+}
+
+.navbar-brand {
+  font-weight: bolder;
+}
+
+@media(max-width: 991px){
+  .sidebar {
+      background-color: rgba(0,0,0,.25);
+      backdrop-filter: blur(10px);
+  }
+}
+
+.sign-up-button {
+  background-image: linear-gradient(to right, rgb(193,43,206), rgb(33,143,217));
+  font-weight: bolder;
+}
+
+
+header {
+  background-image: linear-gradient(to right, rgba(0,0,0,.5), rgba(0,0,0,0));
+  margin-top: 100px;
+}
+
+.feature {
+  min-height: 20rem;
+  background-color: rgba(0,0,0,.25);
+  /*border: 3px solid;*/
+  /*border-color: rgba(255,192,242,0.75);*/
+  /*box-shadow: 0px 0px 3px 3px rgba(255,37,186,0.594);*/
+}
+
+.card-text {
+  padding: 1 rem;
+}
+
+.feature-section {
+  background-image: url(../../../../assets/img/body-background-image.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+
+.concert-table th, .concert-table td {
+  background-color: rgba(0,0,0,.25);
+  color: white;
+  text-shadow: none;
+}
+
+.concert-list {
+  background-color: rgba(0,0,0,.25);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.submit-concert-button, .review-concert-button {
+  background-image: linear-gradient(to right, rgb(193,43,206), rgb(33,143,217));
+}
