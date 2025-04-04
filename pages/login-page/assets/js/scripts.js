@@ -5,7 +5,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
 
     const API_URL = "https://demo-api-skills.vercel.app/api/MusicLover/users/login/";
 
-    const email = document.getElementById("email").value;
+    const email = document.getElementById("email").value; 
     const password = document.getElementById("password").value;
 
 
