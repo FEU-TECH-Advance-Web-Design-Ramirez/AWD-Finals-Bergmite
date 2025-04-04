@@ -1,144 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Concerts and Reviews</title>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Concerts and Reviews</title>
 
-    <!-- Google Font -->
+     <!-- Google Font -->
      <link rel="preconnect" href="https://fonts.googleapis.com">
      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&;family=Montserrat:ital,wght@0,100..900;1,100..900&;display=swap" rel"stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&;family=Montserrat:ital,wght@0,100..900;1,100..900&;display=swap" rel="stylesheet">
 
-     <!-- Boostrap CSS -->
-      <link href="https:https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <!-- Bootstrap CSS -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 
-      <!-- External CSS -->
-       <link rel="stylesheet" href="user-dashboard.css">
+     <!-- External CSS -->
+     <link rel="stylesheet" href="user-dashboard.css">
+  
+     <!-- Axios API-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.8.3/axios.min.js"></script>
 
-       <!-- Axios API -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.8.3/axios.min.js"></script>
+     
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <!--Navbar-->
-        <nav class="navbar navbar-expand-lg bg-transparent fixed-top" data-bs-theme="dark">
-             <div class="container-fluid ms-4 me-4">
+     <!--Header-->
+     <header>
+          <!--Navbar-->
+          <nav class="navbar navbar-expand-lg bg-transparent fixed-top" data-bs-theme="dark">
+               <div class="container-fluid ms-4 me-4">
 
-             <!--Logo-->
-             <a class="navbar-brand" href="./"> <img class="me-2" src="ontrack-logo.png" alt="" width="30">OnTrack</a>
+               <!--Logo-->
+               <a class="navbar-brand" href="./"> <img class="me-2" src="ontrack-logo.png" alt="" width="30">OnTrack</a>
 
-             <!--Toggle Button-->
-             <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-             <span class="navbar-toggler-icon"></span>
-             </button>
-             
-             <!--Side Bar-->
-             <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" aria-modal="true" role="dialog">
+               <!--Toggle Button-->
+               <button class="navbar-toggler shadow-none border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+               </button>
+               
+               <!--Side Bar-->
+               <div class="sidebar offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" aria-modal="true" role="dialog">
 
-             <!--Sidebar Header-->   
-             <div class="offcanvas-header border-bottom">
-                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">OnTrack</h5>
-                  <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-             </div>
+               <!--Sidebar Header-->   
+               <div class="offcanvas-header border-bottom">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">OnTrack</h5>
+                    <button type="button" class="btn-close btn-close-white shadow-none" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+               </div>
 
-             <!--Sidebar Body-->
-             <div class="offcanvas-body">
-                  <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
-                       <li class="nav-item">
-                            <a class="nav-link active px-5 user-link" aria-current="page" href="./index.html">User</a>
-                       </li>
-                       <li class="nav-item">
-                            <a class="nav-link text-white" href="./admin-dashboard.html">Admin</a>
-                       </li>
-                  </ul>
+               <!--Sidebar Body-->
+               <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end align-items-center flex-grow-1 pe-3">
+                         <li class="nav-item">
+                              <a class="nav-link active px-5 user-link" aria-current="page" href="./index.html">User</a>
+                         </li>
+                         <li class="nav-item">
+                              <a class="nav-link text-white" href="./admin-dashboard.html">Admin</a>
+                         </li>
+                    </ul>
 
-                  <!--Login & Sign-up -->
-                  <div class="d-flex justify-content-center align-items-center gap-3">
-                       <a class="nav-link sign-up-button text-white text-decoration-none px-3 py-1 rounded-4" href="./pages/sign-up-page/index.html">Log out</a>
+                    <!--Login & Sign-up -->
+                    <div class="d-flex justify-content-center align-items-center gap-3">
+                         <a class="nav-link sign-up-button text-white text-decoration-none px-3 py-1 rounded-4" href="./pages/sign-up-page/index.html">Log out</a>
+                    </div>
+               </div>
+               </div>
+          </nav>
+     </header> 
+     <div class="cotainer-fluid">
+          <div class="container">
+               <div class="card concert-list">
+                    <h1 class="card-header text-white text-center mt-3 ">Concerts List</h1>
+                    <div class="card-body table-responsive ms-4 me-4">
+                         <table class="table table-bordered concert-table">
+                              <thead>
+                                   <tr>
+                                        <th>Title</th>
+                                        <th>Date</th>
+                                        <th>Venue</th>
+                                        <th>Genre</th>
+                                        <th>Validated</th>
+                                   </tr>
+                              </thead>
+                              <tbody id="concertsTable">
+                              <!-- Concerts will be added here dynamically -->
+                              </tbody>
+                         </table>
+                    </div>
+
+               </div>
+          </div>
+          <div class="container mt-5 mb-5 ">
+               <div class="row">
+                    <div class="col-md-12 col-lg-6 mb-5">
+                         <form id="concertForm" class="concert-form m-auto">
+                              <div class="container section-title mb-4">
+                                   <h2 class="text-center">Submit a Concert</h2>
+                              </div>
+                              <div class="mb-3">
+                                   <label for="concertTitle" class="form-label">Concert Title</label>
+                                   <input type="text" class="form-control" id="concertTitle" required>
+                              </div>
+                              <div class="mb-3">
+                                   <label for="concertDate" class="form-label">Date</label>
+                                   <input type="text" class="form-control" id="concertDate" required>
+                              </div>
+                              <div class="mb-3">
+                                   <label for="concertVenue" class="form-label">Venue</label>
+                                   <input type="text" class="form-control" id="concertVenue" required>
+                              </div>
+                              <div class="mb-3">
+                                   <label for="concertGenre" class="form-label">Genre</label>
+                                   <input type="text" class="form-control" id="concertGenre" required>
+                              </div>
+                              <div class="mb-3">
+                                   <label for="submittedBy" class="form-label">Submitted By</label>
+                                   <input type="text" class="form-control" id="submittedBy" required>
+                              </div>
+                              <button type="submit" class="btn btn-primary w-100 submit-concert-button mt-2">Submit Concert</button>
+                         </form>
+                    </div>
+                    <div class="col-md-12 col-lg-6 mb-3">
+                         <form id="reviewForm" class="review-form m-auto">
+                              <div class="container section-title mb-4">
+                                   <h2>Submit a Concert Review</h2>
+                              </div>
+                              <div class="mb-3">
+                              <label for="concertId" class="form-label">Concert ID</label>
+                              <input type="text" class="form-control" id="concertId" required>
+                              </div>
+                              <div class="mb-3">
+                              <label for="userId" class="form-label">User ID</label>
+                              <input type="text" class="form-control" id="userId" required>
+                              </div>
+                              <div class="mb-3">
+                              <label for="rating" class="form-label">Rating (1-5)</label>
+                              <input type="number" class="form-control" id="rating" min="1" max="5" required>
+                              </div>
+                              <div class="mb-3">
+                              <label for="comment" class="form-label">Comment</label>
+                              <textarea class="form-control" id="comment" rows="3" required></textarea>
+                              </div>
+                              <button type="submit" class="btn btn-primary w-100 review-concert-button">Submit Review</button>
+                         </form>
+                    </div>
+               </div>
+          </div>
+     </div>
+     <footer class="footer bg-black text-white py-5 justify-content-center">
+          <div class="container-fluid">
+              <div class="row">
+  
+                  <!---Brand Logo and Description-->
+                  <div class="col-md-4 text-center">
+                      <div class="d-flex align-items-center">
+                          <img class="me-2 text-center" src="ontrack-logo.png" alt="OnTrack Logo" width="30">
+                          <h4 class="fw-bold text-uppercase mb-0">OnTrack</h4>
+                      </div>
+                      <!-- <p class="tagline fw-bold text-white">Your Sound, Your Stage, Your Story.</p> -->
+                      <p>It captures the essence of your platform—music streaming, playlists, artists, and live concerts—while playing on the word "OnTrack" to signify being in tune with music. Let me know if you want more suggestions!</p>
+  
+                      <!--Social Media Icons-->
+                      <div class="social-icons">
+                          <a href="#" class="text-white me-3"><i class="fab fa-facebook fa-lg"></i></a>
+                          <a href="" class="text-white me-3"><i class="fab fa-twitter fa-lg"></i></a>
+                          <a href="" class="text-white"><i class="fab fa-instagram fa-lg"></i></a>
+                      </div>
                   </div>
-             </div>
-             </div>
-        </nav>
-   </header>
-   <div class="container-fluid">
-    <div class="container">
-        <div class="card concert-list">
-            <h1 class="card-header text-white text-center mt-3">Concerts List</h1>
-            <div class="card-body table-responsive ms-4 me-4">
-                <table class="table table-bordered concert-table">
-                    <thead>
-                        <tr>
-                            <th>Title</th>
-                            <th>Date</th>
-                            <th>Venue</th>
-                            <th>Genre</th>
-                            <th>Validated</th>
-                        </tr>
-                    </thead>
-                    <tbody id="concertsTable"></tbody>
-                </table>
-            </div>
+  
+                  <!--Navigation Links-->
+                  <div class="col-md-4 text-center">
+                      <h6 class="text-uppercase">navigation</h6>
+                      <ul class="list-unstyled justify-content-center">
+                          <li><a href="./index.html" class="text-white text-decoration-none">Home</a></li>
+                          <li><a href="../about-page/index.html" class="text-white text-decoration-none">About Us</a></li>
+                          <li><a href="../login-page/index.html" class="text-white text-decoration-none">Login</a></li>
+                          <li><a href="../sign-up-page/index.html" class="text=white text-decoration-none">Sign-up</a></li>
+                      </ul>
+                  </div>
+  
+                  <!--Information-->
+                  <div class="col-md-4 text-center">
+                      <h6 class="text-uppercase fw-bold">Information</h6>
+                      <p><i class="fa-solid fa-clock">8 AM - 5 PM, Mon - Sat</i></p>
+                      <p><i class="fa-solid fa-envelope">ontrack@gmail.com</i></p>
+                      <p><i class="fa-solid fa-location-dot">Paredes Street, Sampaloc, Manila, Philippines</i></p>
+                      <p><i class="fa-solid fa-phone">09123456789</i></p>
+                      <a href="#" class="btn get-started-button px-4">
+                          📞 Call Us
+                      </a>
+                  </div>
+                  
+  
+                  <hr class="border-secondary my-4">
+  
+                  <div class="text-center">
+                      <p class="mb-0">©2025 OnTrack. All Rights Reserved.</p>
+                  </div>
+              </div>
+          </div>
+      </footer> 
 
-        </div>
-    </div>
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-md-12 col-lg-6 mb-5">
-                <form id="concertForm" class="concert-form m-auto">
-                    <div class="container section-title mb-4">
-                        <h2 class="text-center">Submit a Concert</h2>
-                    </div>
-                    <div class="mb-3">
-                        <label for="concertTitle" class="form-label">Concert Title</label>
-                        <input type="text" class="form-control" id="concertTitle" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="concertDate" class="form=label">Date</label>
-                        <input type="text" class="form-control" id="concertDate" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="concertVenue" class="form-label">Venue</label>
-                        <input type="text" class="form-control" id="concertVenue" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="concertGenre" class="form-label">Genre</label>
-                        <input type="text" class="form-control" id="concertGenre" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="submittedBy" class="form-label">Submitted By</label>
-                        <input type="text" class="form-control" id="submittedBy" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100 submit-concert-button mt-2">Submit Concert</button>
-                </form>
-            </div>
-            <div class="col-md-12 col-lg-6 mb-3">
-                <form id="reviewForm" class="review-form m-auto">
-                    <div class="container section-title mb-4">
-                        <h2>Submit a Concert Review</h2>
-                    </div>
-                    <div class="mb-3">
-                        <label for="concertId" class="form-label">Concert ID</label>
-                        <input type="text" class="form" id="concertId" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="userId" class="form-label">User ID</label>
-                        <input type="text" class="form-control" id="userId" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="rating" class="form-label">Rating (1-5)</label>
-                        <input type="number" class="form-control" id="rating" min="1" max="5" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="comment" class="form-label">Comment</label>
-                        <textarea class="form-control" id="comment" rows="3" required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary w-100 review-concert-button">Submit Review</button>
-                </form>
-            </div>
-        </div>
-    </div>
-   </div>
+     <!-- Bootsrap JS -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+     <!-- External JS -->
+     <script src="user-dashboard.js"></script>    
 </body>
 </html>
