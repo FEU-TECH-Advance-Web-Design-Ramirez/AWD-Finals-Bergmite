@@ -48,7 +48,7 @@ function displayConcerts() {
                    row.appendChild(reviewsCell);
 
                 concertsTable.appendChild(row);
-            });
+            }); 
         })
         .catch(error => {
             console.error("Error fetching concerts:", error);
