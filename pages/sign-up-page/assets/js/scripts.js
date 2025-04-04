@@ -17,7 +17,7 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
         .then(response => {
                    // If all fields are valid
               alert("Sign up successful! Welcome, " + name);
-              window.location.replace("/pages/login-page")
+              window.location.replace("/AWD-Finals-Bergmite/pages/login-page");
               document.getElementById("signupForm").reset(); // Clear the form
         })
         .catch(error => {
