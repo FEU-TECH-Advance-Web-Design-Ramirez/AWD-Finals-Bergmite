@@ -113,6 +113,30 @@
                     <button type="submit" class="btn btn-primary w-100 submit-concert-button mt-2">Submit Concert</button>
                 </form>
             </div>
+            <div class="col-md-12 col-lg-6 mb-3">
+                <form id="reviewForm" class="review-form m-auto">
+                    <div class="container section-title mb-4">
+                        <h2>Submit a Concert Review</h2>
+                    </div>
+                    <div class="mb-3">
+                        <label for="concertId" class="form-label">Concert ID</label>
+                        <input type="text" class="form" id="concertId" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="userId" class="form-label">User ID</label>
+                        <input type="text" class="form-control" id="userId" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="rating" class="form-label">Rating (1-5)</label>
+                        <input type="number" class="form-control" id="rating" min="1" max="5" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Comment</label>
+                        <textarea class="form-control" id="comment" rows="3" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 review-concert-button">Submit Review</button>
+                </form>
+            </div>
         </div>
     </div>
    </div>
