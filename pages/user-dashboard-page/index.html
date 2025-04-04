@@ -62,5 +62,59 @@
              </div>
         </nav>
    </header>
+   <div class="container-fluid">
+    <div class="container">
+        <div class="card concert-list">
+            <h1 class="card-header text-white text-center mt-3">Concerts List</h1>
+            <div class="card-body table-responsive ms-4 me-4">
+                <table class="table table-bordered concert-table">
+                    <thead>
+                        <tr>
+                            <th>Title</th>
+                            <th>Date</th>
+                            <th>Venue</th>
+                            <th>Genre</th>
+                            <th>Validated</th>
+                        </tr>
+                    </thead>
+                    <tbody id="concertsTable"></tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+    <div class="container mt-5 mb-5">
+        <div class="row">
+            <div class="col-md-12 col-lg-6 mb-5">
+                <form id="concertForm" class="concert-form m-auto">
+                    <div class="container section-title mb-4">
+                        <h2 class="text-center">Submit a Concert</h2>
+                    </div>
+                    <div class="mb-3">
+                        <label for="concertTitle" class="form-label">Concert Title</label>
+                        <input type="text" class="form-control" id="concertTitle" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="concertDate" class="form=label">Date</label>
+                        <input type="text" class="form-control" id="concertDate" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="concertVenue" class="form-label">Venue</label>
+                        <input type="text" class="form-control" id="concertVenue" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="concertGenre" class="form-label">Genre</label>
+                        <input type="text" class="form-control" id="concertGenre" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="submittedBy" class="form-label">Submitted By</label>
+                        <input type="text" class="form-control" id="submittedBy" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100 submit-concert-button mt-2">Submit Concert</button>
+                </form>
+            </div>
+        </div>
+    </div>
+   </div>
 </body>
 </html>
