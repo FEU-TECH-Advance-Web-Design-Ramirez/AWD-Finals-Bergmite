@@ -23,7 +23,7 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
         .catch(error => {
             alert(error.message);
             console.error("Error:", error);
-        });
+        }); 
 });
 
 
