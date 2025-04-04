@@ -1,68 +1,51 @@
-body {
-    font-family: Arial, sans-serif;
+/* Full screen layout */
+body, html {
+    height: 100%;
+    margin: 0;
+  }
+  .container {
+    display: flex;
+    height: 100%;
+  }
+  .left-section {
+    flex: 1;
+    background-image: url(../../../../assets/img/body-background-image.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background: linear-gradient(to right, rgb(193, 43, 206), rgb(33, 143, 217));
-    margin: 0;
-    }
-    
-    .container {
-    background: white;
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
-    width: 400px;
-    }
-    
-    .name-container {
+    color: #333;
+  }
+  .right-section {
+    flex: 1;
     display: flex;
-    gap: 10px;
-    }
-    
-    .name-container input {
-    width: 50%;
-    }
-    
-    input {
-    width: 95%;
-    padding: 10px;
-    margin: 10px 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-    }
-    
-    button {
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+  }
+  .signup-form {
     width: 100%;
-    padding: 10px;
-    background: linear-gradient(to right, rgb(193, 43, 206), rgb(33, 143, 217));
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-    transition: background 0.3s;
-    }
-    
-    button:hover {
-    background: darkblue;
-    }
-    
-    .error {
-    color: red;
-    font-size: 12px;
-    }
+    max-width: 400px;
+    padding: 30px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .signup-form h2 {
+    margin-bottom: 20px;
+  }
+  .form-control {
+    margin-bottom: 15px;
+  }
+  .login-link {
+    text-align: center;
+    margin-top: 15px;
+  }
+  .login-link a {
+    text-decoration: none;
+  }
 
-    .title-container {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    
-    .logo {
-        width: 50px;
-        height: auto;
-    }
+  h1 {
+    color: white;
+    font-weight: bold;
+
+  }
