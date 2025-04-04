@@ -24,7 +24,7 @@ document.getElementById("loginForm").addEventListener("submit", function (event)
                  alert("Login Successful!");
                  document.getElementById("loginForm").reset();
 
-                 window.location.replace("/user-dashboard-page")
+                 window.location.replace("/AWD-Finals-Bergmite/pages/user-dashboard-page")
         })
         .catch((err) => {
               document.getElementById("loginError1").style.display = "block";
