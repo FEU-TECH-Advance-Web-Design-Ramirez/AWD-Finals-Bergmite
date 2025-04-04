@@ -56,7 +56,7 @@ function displayConcerts() {
 }
 
 function toggleConcertValidation(concertId, currentValidationStatus) {
-    const API_URL = https://demo-api-skills.vercel.app/api/MusicLover/concerts/${concertId}/validate;
+    const API_URL = `https://demo-api-skills.vercel.app/api/MusicLover/concerts/${concertId}/validate`;
 
     // Toggle the validation status
     const newValidationStatus = !currentValidationStatus;
