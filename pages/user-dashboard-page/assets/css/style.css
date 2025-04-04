@@ -17,7 +17,7 @@
   }
   
   body{
-    background-image: url(body-background-image.jpg);
+    background-image: url(../../../../assets/img/body-background-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -62,7 +62,7 @@
   }
   
   .feature-section {
-    background-image: url(../img/body-background-image.jpg);
+    background-image: url(../../../../assets/img/body-background-image.jpg);
     background-size: cover;
     background-repeat: no-repeat;
   }
