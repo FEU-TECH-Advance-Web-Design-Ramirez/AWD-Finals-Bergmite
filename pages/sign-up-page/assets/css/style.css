@@ -1,49 +1,51 @@
+/* Full screen layout */
 body, html {
     height: 100%;
     margin: 0;
-}
-
-.container {
+  }
+  .container {
     display: flex;
     height: 100%;
-}
-
-.left-section {
+  }
+  .left-section {
     flex: 1;
-    background-color: #f0f0f0;
+    background-image: url(../../../../assets/img/body-background-image.jpg);
     display: flex;
     justify-content: center;
     align-items: center;
     color: #333;
-}
-
-.right-section {
+  }
+  .right-section {
     flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #ffffff;
-}
-
-.signup-form {
+  }
+  .signup-form {
     width: 100%;
     max-width: 400px;
     padding: 30px;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.signup-form h2 {
+  }
+  .signup-form h2 {
     margin-bottom: 20px;
-}
-.form-control {
+  }
+  .form-control {
     margin-bottom: 15px;
-}
-.login-link {
+  }
+  .login-link {
     text-align: center;
     margin-top: 15px;
-}
-.login-link a {
+  }
+  .login-link a {
     text-decoration: none;
-}
+  }
+
+  h1 {
+    color: white;
+    font-weight: bold;
+
+  }
