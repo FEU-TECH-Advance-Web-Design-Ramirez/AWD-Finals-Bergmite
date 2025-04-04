@@ -16,7 +16,8 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
     axios.post(API_URL, { name, email, password })
         .then(response => {
                    // If all fields are valid
-              alert("Sign up successful! Welcome, " + name);    
+              alert("Sign up successful! Welcome, " + name);
+              window.location.replace("/pages/login-page")
               document.getElementById("signupForm").reset(); // Clear the form
         })
         .catch(error => {
